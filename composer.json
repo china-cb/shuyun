@@ -15,7 +15,7 @@
     "autoload": {
         "psr-4": {
             "Shuyun\\Open\\": "src/Open"
-        },
+        }
        
     },
     "minimum-stability": "dev"
