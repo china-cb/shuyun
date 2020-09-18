@@ -2,6 +2,7 @@
 namespace Shuyun;
 
 use Shuyun\Open\Helper\ShuyunHelper;
+use Shuyun\Http;
 
 
 class Shuyun
@@ -14,7 +15,7 @@ class Shuyun
             'Gateway-Request-Time' => ShuyunHelper::msectime()
         );
         $body  = $data;
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
 

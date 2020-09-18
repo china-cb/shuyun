@@ -33,7 +33,7 @@ class Demo
         );
         
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
 
@@ -56,7 +56,7 @@ class Demo
         );
 
         $requestType = "Put";
-        $res = ShuyunHelper::syRequestsyRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
     }
@@ -79,7 +79,7 @@ class Demo
         );
         
         $requestType = "Get";
-        $res = ShuyunHelper::syRequestsyRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -103,7 +103,7 @@ class Demo
         );
        
         $requestType = "Get";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -127,7 +127,7 @@ class Demo
         );
         
         $requestType = "Get";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -152,7 +152,7 @@ class Demo
         );
        
         $requestType = "Get";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -169,7 +169,7 @@ class Demo
             'fields' => 'cardPlanId',
         );
         $requestType = "Get";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -190,7 +190,7 @@ class Demo
         );
         
         $requestType = "Put";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
     }
@@ -229,7 +229,7 @@ class Demo
         ];
     
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
     }
@@ -247,7 +247,7 @@ class Demo
             'fields' => $fields,
         );
         $requestType = "Get";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -269,7 +269,7 @@ class Demo
     
         );
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res,true);
         return $res;
     }
@@ -285,7 +285,7 @@ class Demo
         );
         $body = $data;
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -355,7 +355,7 @@ class Demo
         
     
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         return $res;
     }
 
@@ -375,7 +375,7 @@ class Demo
     
         );
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
     }
@@ -402,7 +402,7 @@ class Demo
     
         );
         $requestType = "Post";
-        $res = ShuyunHelper::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
+        $res = Http::syRequest($Method,$signdata,$body,$intefacetype,$requestType);
         $res = json_decode($res[1],true);
         return $res;
     }
