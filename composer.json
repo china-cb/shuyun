@@ -1,0 +1,22 @@
+{
+    "name": "hpf/shuyun",
+    "description": "this is test",
+    "type": "library",
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "faker666",
+            "email": "949381760@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Shuyun\\Open\\": "src/Open"
+        },
+       
+    },
+    "minimum-stability": "dev"
+}
